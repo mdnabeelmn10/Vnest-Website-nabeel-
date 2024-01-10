@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>V-NEST Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">FACILITIES</a></li>
+                    <li><a href="#"></a>SCHEMES</li>
+                    <li><a href=""></a>INCUBATION</li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href=""></a>CAREER</li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <br>
+        <br>
+        <div class="head">
+            <h1>CONTACT US
+            </h1>
+
+        </div>
+    </section>
+    <section class="contact">
+        <div class="page">
+            <div class="map">
+                <div class="gmap"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0407859324396!2d80.15085337542921!3d12.840640987462818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVellore%20Institute%20of%20Technology%20Chennai%20Campus%20(VIT%20Chennai)!5e0!3m2!1sen!2sin!4v1704735506774!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <br>
+                <hr>
+                <br>
+                <div class="address">
+                    <div class="home">
+                        <i style='font-size:29px;color:rgb(92, 3, 92);align-self: center;' class='fas'>&#xf015;</i>
+                        <a href="https://www.google.com/maps/dir/12.8387424,80.1540219/vit+chennai/@12.8397547,80.1508726,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a5259af8e491f67:0x944b42131b757d2d!2m2!1d80.1534283!2d12.840641?entry=ttu"
+                            style="text-decoration: none;">
+                            <p style="text-align: center;" class="add">Kelambakkam - Vandalur Rd, Rajan Nagar,Chennai, Tamil Nadu 600127</p>
+                        </a>
+
+                    </div>
+                    <div class="mailcall">
+                        <div class="call">
+                            <i style='font-size:29px;color:rgb(92, 3, 92);align-self: center;' class='fas'>&#xf095;</i>
+                            <p class="c">044-039931143<br>044-039931555</p>
+                        </div>
+                        <div class="mail">
+                            <i style='font-size:31px;color:rgb(92, 3, 92);align-self: center;' class='fas'>&#xf674;</i>
+                            <a href="mailto:director.vnest@vit.ac.in" style="text-decoration: none;">
+                                <p class="m">director.vnest@vit.ac.in</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h1 id="head">Feel Free To Ask Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi obcaecati, cum adipisci
+                    deserunt, labore voluptatem distinctio corrupti dolorem, voluptates consequatur dolore blanditiis
+                    debitis quae.</p><br>
+                <form class="input-group" onsubmit="sendemail(); reset(); return false;">
+                    <input requiredtype="text" id="fname" placeholder="First Name" required>
+                    <label class="label" for="fname"></label>
+                    <input requiredtype="text" id="lname" placeholder="Last Name" required>
+                    <label class="label" for="lname"></label>
+                    <input requiredtype="text" id="email" placeholder="Email Id" required>
+                    <label class="label" for="email"></label>
+                    <input requiredtype="text" id="phone" placeholder="Phone No." required>
+                    <label class="label" for="phone"></label>
+                    <textarea id="message" placeholder="Message" required></textarea>
+                    <button type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row1">
+
+                <div class="footer-col">
+                    <div class="footer-col-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact US</a></li>
+                            <li><a href="">Facilities</a></li>
+                            <li><a href="">Incubation</a></li>
+                            <li><a href="">Schemes</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-col-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;director.vnest@vit.ac.in</a>
+                            </li>
+                            <li><a href=""><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;044-039931143</a></li>
+                            <li><a href=""><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Vellore Institute of
+                                    Technology<br>&nbsp;
+                                    &nbsp;&nbsp;&nbsp;Vandalur <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kelambakkam Road<br> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    Chennai 600 127</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="footer-col">
+                    <div class="footer-col-newsletter">
+                        <h4>Newsletter</h4>
+                        <form action="">
+                            <input type="text" placeholder="Your Name" class="inputName">
+                            <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                            <input type="submit" value="Submit" class="inputSubmit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row2">
+                <div class="col">
+                    <p>&#169; Made by Mohamed Nabeel. All Rights Reserved.</p>
+                </div>
+
+                <div class="wrapper">
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-facebook-f"></i>
+                        </div>
+                        <span>Facebook&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <span>Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <span>Instagram&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <i class="fa fa-youtube"></i>
+                        </div>
+                        <span> YouTube&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendemail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "persnabeel@gmail.com",
+                Password: "hidayath@20002004",
+                To: 'mdnabeelmn10@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact form",
+                Body: "Name: " + document.getElemetById("fname").value + " " + document.getElemetById("lname").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone No.: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert(message)
+            );
+
+        }
+    </script>
+
+</body>
+
+</html>
