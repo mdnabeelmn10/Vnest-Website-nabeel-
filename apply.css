@@ -1,0 +1,90 @@
+body{
+    font-size:20px;
+    background-color: #CBC3E3 ;
+}
+.applications{
+    margin:10px;
+    margin-top: 0px;
+}
+.head{
+    height:10%;
+    width:100%;
+    border:5px solid rgb(92, 3, 92);
+    background-color:purple;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 90px;
+}
+.form{
+    padding:15px;
+    padding-top: 0px;
+    padding-left: 40px;
+    font-size: 30px;
+}
+input, select{
+    height:40px;
+    border:2px solid rgb(92, 3, 92);
+}
+textarea{
+    border:2px solid rgb(92, 3, 92);
+}
+.emp{
+    display:flex;
+    flex-wrap: wrap;
+}
+.emps{
+    border:2px solid rgb(92, 3, 92);
+    margin:5px;
+    padding-left:5px;
+    padding-top: 0;
+}
+.cvs{
+    width:55%;
+}
+#cv{
+    width:fit-content;
+}
+label,textarea,input,select{
+    margin:5px;
+    margin-left: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.label{
+    font-size: 25px;
+}
+input,textarea,select{
+    border:0;
+    border-bottom: 3px solid purple;
+    background-color: white;
+    font-size: 20px;
+    
+}
+textarea{
+    width: 80%;
+}
+.submit{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+#btn{
+    height:4rem;
+    width: 10rem;
+    font-size: 30px;
+    color:white;
+    background-color: purple;
+}
+h4{
+    color: rgb(47, 0, 47);
+    font-weight: 1000;
+}
+
+/* 
+#CBC3E3 
+rgba(128, 0, 128, 0.116)
+*/

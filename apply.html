@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vnest Application Form</title>
+    <link rel="stylesheet" href="apply.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+        integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+        crossorigin="anonymous">
+        </script>
+    
+</head>
+
+<body>
+    <form class="application" enctype="text/plain" id="appl">
+        <div class="head">
+            <img id="logo" src="img/logo.png">
+        </div>
+        <div class="form">
+            <form action="dbconnect.php" method="post" enctype="multipart/form-data" class="mainform">
+                <center>
+                    <h2>Application Form</h2>
+                </center>
+                
+                <label for="bname">Name Of Business:</label>
+                <input id="bname" type="text"><br>
+                <label for="cin">CIN:</label>
+                <input id="cin" type="text"><br>
+                <label for="inc">Incorporation date: </label>
+                <input id="inc" type="text"><br>
+                <label for="pan">PAN: </label>
+                <input id="pan" type="text"><br>
+                <label for="tan">TAN:</label>
+                <input id="tan" type="text"><br>
+                <label for="gst">GST:</label>
+                <input id="gst" type="text"><br>
+                <h4>Name Of Directors and DIN</h4>
+                <label for="1">1</label>
+                <input id="1" type="text"><br>
+                <label for="2">2</label>
+                <input id="2" type="text"><br>
+                <label for="3">3</label>
+                <input id="3" type="text"><br>
+                <label for="4">4</label>
+                <input id="4" type="text"><br>
+                <!-- Name of lead pg2 -->
+                <div class="html2pdf__page-break"></div>
+                <h4>Lead Enterpreneur</h4>
+                <label for="name">Full Name:</label>
+                <label for="title"></label>
+                <select id="title">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="dr">Dr</option>
+                    <option value="prof">Prof.</option>
+                </select>
+
+                <input id="name" type="text"><br>
+                <label for="lage">Age:</label>
+                <input id="lage" type="text"><br>
+                <label for="mobno">Mobile Number:</label>
+                <input id="mobno" type="text"><br>
+                <label for="Email">Email:</label>
+                <input id="Email" type="text"><br>
+                <label for="linkedin">Linkedin:</label>
+                <input id="linkedin" type="text"><br>
+                <h4>Address</h4>
+                <label for="city">City:</label>
+                <input id="city" type="text"><br>
+                <label for="state">State:</label>
+                <input id="state" type="text"><br>
+                <label for="code">Postal Code:</label>
+                <input id="code" type="text"><br>
+                <label for="country">Country:</label>
+                <input id="country" type="text"><br>
+                <h5>Please upload your resume</h5>
+                <label for="cv">Resume:</label>
+                <input id="cv" class="cvs" type="file">
+                <hr>
+
+                <div class="html2pdf__page-break"></div>
+
+                <h4>Educational Qualification:</h4>
+                <label for="qual">Highest Qualification/Institute:</label>
+                <input id="qual" type="text"><br>
+                <label for="yr">Year of Passing:</label>
+                <input id="yr" type="text"><br>
+                <label for="area">Area of Specialization:</label>
+                <input id="area" type="text"><br>
+                <label for="research">Research experience if any:</label><br>
+                <textarea id="research" cols="50" rows="2" resize></textarea><br>
+                <hr>
+                <div class="html2pdf__page-break"></div>
+                <h4>About your Business</h4>
+                <label for="type">Type of Business:</label>
+                <input id="type" type="text">
+                <h5>Please attach your Business Plan</h5>
+                <label for="plan">Business Plan:</label>
+                <input id="plan" type="file">
+
+                <h4>How long have you been in business?</h4>
+                <input type="radio" id="concept" name="timeinbusiness" value="HTML">
+                <label for="oneyr">One Year</label><br>
+                <input type="radio" id="oneyr" name="timeinbusiness" value="oneyr">
+                <label for="oneyr">Less than a year</label><br>
+                <input type="radio" id="lessthan5" name="timeinbusiness" value="lessthan5">
+                <label for="lessthan5">Less than 5 years</label><br>
+                <input type="radio" id="morethan5" name="timeinbusiness" value="morethan5">
+                <label for="morethan5">More than 5 years</label>
+
+                <h4>Services Required through VNEST</h4>
+                <input type="checkbox" id="op1" value="infra">
+                <label for="op1">Infra access : Office / Labs/ Internet /Discussion space/Cowork space </label><br>
+                <input type="checkbox" id="op2" value="mentor">
+                <label for="op2">Mentoring (Technology/Business) </label><br>
+                <input type="checkbox" id="op3" value="fund">
+                <label for="op3">Funding access</label><br>
+                <input type="checkbox" id="op4" value="legal">
+                <label for="op4">Legal /Regulatory guidance </label><br>
+                <input type="checkbox" id="op5" value="talent">
+                <label for="op5">Talent access (Interns/ Hiring facilitation) </label><br>
+                <input type="checkbox" id="op6" value="connections">
+                <label for="op6"> Industry connect (market validation/selling)</label><br>
+
+                <div class="html2pdf__page-break"></div>
+
+                <h4>Team Details:</h4>
+                <label for="full">Full-time</label>
+                <input id="full" type="text"><br>
+                <label for="part">Part-time</label>
+                <input id="part" type="text"><br>
+                <label for="consultants">Consultants</label>
+                <input id="consultants" type="text"><br>
+                <h5>Information on Team Members</h3>
+                <div class="emp">
+                    <div class="emps" id="emp1">
+                        <h5>Employee 1</h5>
+                        <label for="name1">Full Name:</label>
+                        <input id="name1" type="text"><br>
+                        <label for="lage1">Age:</label>
+                        <input id="lage1" type="text"><br>
+                        <label for="mobno1">Mobile Number:</label>
+                        <input id="mobno1" type="text"><br>
+                        <label for="Email1">Email:</label>
+                        <input id="Email1" type="text"><br>
+                        <label for="linkedin1">Linkedin:</label>
+                        <input id="linkedin1" type="text"><br>
+                        <label for="cv1">Resume:</label>
+                        <input id="cv1" class="cvs" type="file"><br>
+                        <label for="role1">Role:</label>
+                        <input id="role1" type="text">
+                    </div>
+                    <div class="html2pdf__page-break"></div>
+                    <div class="emps" id="emp2">
+                        <h5>Employee 2</h5>
+                        <label for="name2">Full Name:</label>
+                        <input id="name2" type="text"><br>
+                        <label for="lage2">Age:</label>
+                        <input id="lage2" type="text"><br>
+                        <label for="mobno2">Mobile Number:</label>
+                        <input id="mobno2" type="text"><br>
+                        <label for="Email2">Email:</label>
+                        <input id="Email2" type="text"><br>
+                        <label for="linkedin2">Linkedin:</label>
+                        <input id="linkedin2" type="text"><br>
+                        <label for="cv2">Resume:</label>
+                        <input id="cv2" class="cvs" type="file"><br>
+                        <label for="role2">Role:</label>
+                        <input id="role2" type="text">
+                    </div>
+                    <div class="emps" id="emp3">
+                        <h5>Employee 3</h5>
+                        <label for="name3">Full Name:</label>
+                        <input id="name3" type="text"><br>
+                        <label for="lage3">Age:</label>
+                        <input id="lage3" type="text"><br>
+                        <label for="mobno3">Mobile Number:</label>
+                        <input id="mobno3" type="text"><br>
+                        <label for="Email3">Email:</label>
+                        <input id="Email3" type="text"><br>
+                        <label for="linkedin3">Linkedin:</label>
+                        <input id="linkedin3" type="text"><br>
+                        <label for="cv3">Resume:</label>
+                        <input id="cv3" class="cvs" type="file"><br>
+                        <label for="role3">Role:</label>
+                        <input id="role3" type="text">
+                    </div>
+                    <div class="html2pdf__page-break"></div>
+                </div>
+                <hr>
+                <label for="Problem">Problem identified / being worked on:</label><br>
+                <textarea id="Problem" cols="50" rows="2" resize></textarea><br>
+                <label for="Value">Value proposition for this problem: </label><br>
+                <textarea id="Value" cols="50" rows="2" resize></textarea><br>
+                <label for="sellingpoint">Unique Selling Point:</label><br>
+                <textarea id="sellingpoint" cols="50" rows="2" resize></textarea><br>
+                <label for="target">Target Customer segment:</label><br>
+                <textarea id="target" cols="50" rows="2" resize></textarea><br>
+                <label for="exp">Do you/your team members have any previous business experience?</label><br>
+                <textarea id="exp" cols="50" rows="2" resize></textarea><br>
+                <label for="expyrs">If yes, how many years?</label>
+                <input id="expyrs" type="text"><br>
+                <label for="help">How do you think your past experience is going to help you in this new
+                    venture?</label><br>
+                <textarea id="help" cols="50" rows="2" resize></textarea><br>
+                <label for="seed">Have you estimated and identified your seed funding needs / source? </label><br>
+                <textarea id="seed" cols="50" rows="2" resize></textarea><br>
+                <label for="survey">Have you done market survey? If yes, Briefly describe the method and
+                    results.</label><br>
+                <textarea id="survey" cols="50" rows="2" resize></textarea><br>
+                <label for="targetmarket">Describe your target market:</label><br>
+                <textarea id="targetmarket" cols="50" rows="2" resize></textarea><br>
+                <br>
+                <hr>
+
+                <div class="html2pdf__page-break"></div>
+                <h4>Technology Details</h4>
+                <label for="a">Is your business idea depends on application of certain technology, which needs to
+                    developed? If so, please briefly describe the same?</label><br>
+                <textarea id="a" cols="50" rows="2" resize></textarea><br>
+                <label for="b">Is this technology your own? Or obtained from other sources?</label><br>
+                <textarea id="b" cols="50" rows="2" resize></textarea><br>
+                <label for="c">If your own, have you completed technology development? Or what stage you are in the
+                    development process? What is the estimated time for completion of the development of the technology?
+                </label><br>
+                <textarea id="c" cols="50" rows="2" resize></textarea><br>
+                <label for="d">Do you need technology development and research assistance?</label><br>
+                <textarea id="d" cols="50" rows="2" resize></textarea><br>
+                <label for="e">If technology for your project is provided by another lab or agency, please indicate the
+                    name of agency.</label><br>
+                <textarea id="e" cols="50" rows="2" resize></textarea>
+
+                <h4>Decleration:</h4>
+                <input type="checkbox" id="finalchk" required>
+                <label for="finalchk">The information that I/we have provided is correct. I further declare that the
+                    information that I have provided here with are not proprietary in nature and that I would not make
+                    any claim on same. I have also read and understood and accepted the terms and conditions set forth
+                    in the disclaimer in the beginning of this application.</label>
+            </form>
+        </div>
+
+    </form>
+    <div class="submit">
+        <input type="button" id="btn" class="btn btn-primary" onclick="GeneratePdf();" value="Submit">
+    </div>
+
+</body>
+<script>
+    function GeneratePdf() {
+
+        var element = document.getElementById('appl');
+        var originalFontSize = element.style.fontSize; // Store original size
+
+
+        // Calculate the new font size as 40% of the original
+        var newFontSize = parseFloat(originalFontSize) * 0.4;
+
+        // Set the new font size using the correct units
+        element.style.fontSize = newFontSize + "px"; // Ensure "px" unit for clarity
+
+        html2pdf(element, {
+            margin: 4,
+            filename: 'Vnest Application.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 3 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        });
+    }
+
+    document.getElementById("finalchk").required = true;
+</script>
+
+</html>
